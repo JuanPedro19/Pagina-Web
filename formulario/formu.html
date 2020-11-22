@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<HTML lang="es">
+
+<HEAD>
+	    <TITLE>Formulario</TITLE>
+</HEAD>
+
+<BODY bgcolor="CCFFFF"> 
+
+<table align="center">
+    <tr>
+	   <td> <IMG width="100%" height="55%" SRC="formu.png"> </td>
+    </tr>
+</table> 
+
+<FORM name="Formulario" method="post" action="cargando.html" enctype="text/plain">
+<table bgcolor="CCCCFF" align="center">
+    <tr>
+	   <td> <b> Sexo: </b> </td>  
+	</tr> 
+    <tr>
+	   <td> <label> Hombre <input name="sexo" type="radio" value="H" required>  Mujer <input name="sexo" type="radio" value="M" required> </label> </td>  
+	</tr>
+    <tr>
+	   <td> <label> <b> Nombre: </b> <br> <input name="nombre" type="text" required> </label> </td>  
+	</tr>  
+    <tr>
+	   <td> <label> <b> Apellidos: </b> <br> <input name="apellidos" type="text" size="40" required> </label> </td>  
+	</tr>  
+    <tr>
+	   <td> <label> <b> Fecha Nacimiento: </b> <br> <input name="fecha" type="date" name="dateNacimiento" required> </td>  
+	</tr>  
+    <tr>
+	   <td> <label> <b> Teléfono móvil (opcional): </b> <br> <input name="telefono" type="text" pattern="[0-9]{9}"> </label> </td>  
+	</tr>  
+    <tr>
+	   <td> <label> <b> Provincia: </b> <br>
+	   <select name="provincia" required>
+			<option value='0'>(Seleccionar)</option>
+			<option value='2'> Álava </option>
+			<option value='3'> Albacete </option>
+			<option value='4'> Alicante </option>
+			<option value='5'> Almería </option>
+			<option value='6'> Asturias </option>
+			<option value='7'> Ávila </option>
+			<option value='8'> Badajoz </option>
+			<option value='9'> Barcelona </option>
+			<option value='10'> Burgos </option>
+			<option value='11'> Cáceres </option>
+			<option value='12'> Cádiz </option>
+			<option value='13'> Cantabria </option>
+			<option value='14'> Castellón </option>
+			<option value='15'> Ceuta </option>
+			<option value='16'> Ciudad Real </option>
+			<option value='17'> Córdoba </option>
+			<option value='18'> Cuenca </option>
+			<option value='19'> Girona </option>
+			<option value='20'> Las Palmas </option>
+			<option value='21'> Granada </option>
+			<option value='22'> Guadalajara </option>
+			<option value='23'> Guipúzcoa </option>
+			<option value='24'> Huelva </option>
+			<option value='25'> Huesca </option>
+			<option value='26'> Illes Balears </option>
+			<option value='27'> Jaén </option>
+			<option value='28'> A Coruña </option>
+			<option value='29'> La Rioja </option>
+			<option value='30'> León </option>
+			<option value='31'> Lleida </option>
+			<option value='32'> Lugo </option>
+			<option value='33'> Madrid </option>
+			<option value='34'> Málaga </option>
+			<option value='35'> Melilla </option>
+			<option value='36'> Murcia </option>
+			<option value='37'> Navarra </option>
+			<option value='38'> Ourense </option>
+			<option value='39'> Palencia </option>
+			<option value='40'> Pontevedra </option>
+			<option value='41'> Salamanca </option>
+			<option value='42'> Segovia </option>
+			<option value='43'> Sevilla </option>
+			<option value='44'> Soria </option>
+			<option value='45'> Tarragona </option>
+			<option value='46'> Santa Cruz de Tenerife </option>
+			<option value='47'> Teruel </option>
+			<option value='48'> Toledo </option>
+			<option value='49'> Valencia </option>
+			<option value='50'> Valladolid </option>
+			<option value='51'> Vizcaya </option>
+			<option value='52'> Zamora </option>
+			<option value='53'> Zaragoza </option>
+       </select> </td>
+	</tr>  
+    <tr>
+	   <td> <label> <b> Localidad: </b> <br> <input name="localidad" type="text" required> </label> </td>  
+	</tr>  
+    <tr>
+	   <td> <label> <b> Dirección: </b> <br> <input name="dirección" type="text" size="80" maxlength="120" value="C/" required>  </label> </td>  
+	</tr>  
+    <tr>
+	   <td> <label> <b> Código postal: </b> <br> <input name="codigo" type="text" required pattern="[0-9]{5}"> </label> </td>  
+	</tr>  
+    <tr>
+	   <td> <label> <b> Correo electrónico: </b> <br> <input name="correo" type="text" value="@" size="40" required> </label> </td>  
+	</tr> 
+    <tr>
+	   <td> <label> <b> Confirmar correo electrónico: </b> <br> <input name="correo" type="text" value="@" size="40" required> </label> </td>  
+	</tr>	
+    <tr>
+	   <td> <label> <b> Contraseña: </b> <br> <input name="contreseña" type="password" required> </label> </td>  
+	</tr>  
+    <tr>
+	   <td> <label> <b> Confirmar contraseña: </b> <br> <input name="contreseña" type="password" required>  </td>  
+	</tr>  
+    <tr>
+	   <td> <b> Indique que deporte le gusta y/o le interesa más (sólo un deporte): </b> </td>  
+	</tr>  
+    <tr>
+	   <td> <label> <input name="deporte" type="radio" value="N"> Natación 
+                    <input name="deporte" type="radio" value="NS"> Natación sincronizada 
+                    <input name="deporte" type="radio" value="NAB"> Natación en aguas abiertas 
+                    <input name="deporte" type="radio" value="W"> Waterpolo 
+                    <input name="deporte" type="radio" value="S"> Saltos </label>
+	  </td>  
+	</tr>
+    <tr>
+      <td> <b> Por favor, ¿podría indicar alguna propuesta para mejorar la página? </b> </td>
+    </tr>	  
+    <tr>
+      <td> <label> <TEXTAREA name="consulta" rows="3" cols="30"> ->Escriba aquí su propuesta<- </TEXTAREA> </label> </td>
+    </tr>
+	<tr>
+      <td> <label> <INPUT name="A" type="checkbox" value="Sí"> Acepto los Términos y condiciones y la Política de privacidad de <b> "Todo Sobre Natación" </b>. </label> </td>
+    </tr>
+	<tr>
+      <td> <label> <INPUT name="A" type="checkbox" value="Sí"> Me gustaría recibir el boletín semanal por e-mail. Puedo darme de baja cuando quiera. </label>  </td>
+    </tr>
+	<tr>
+      <td align="center"> <INPUT type="SUBMIT" value="Enviar"> </td>
+    </tr>
+</table>
+</FORM>
+<br>
+<hr>
+
+<table align="center">
+    <tr>
+	   <td> <font color="black"> Si desea volver a la página principal haz <dfn> clic </dfn> <A HREF="../index.html"> aquí </font> </A> </td>
+	</tr>
+</table>
+</BODY>
+
+</HTML>
